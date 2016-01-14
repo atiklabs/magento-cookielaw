@@ -25,4 +25,4 @@ Another EU Cookie Law Compliance extension. This extension adds a notice telling
 
 ### To developers
 
-* If you want to push any fixes or improvements I will be glad to check it.
+* If you want to push any fixes or improvements. I will be glad to check them!
