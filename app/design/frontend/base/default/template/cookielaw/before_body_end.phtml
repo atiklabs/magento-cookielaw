@@ -1,0 +1,23 @@
+<?php
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+?>
+<?php $_helper = Mage::helper('cookielaw'); ?>
+<?php if ($_helper->isActive()): ?>
+    <?php if ($_helper->getType() != 'v-bar' || $_helper->getBarPosition() != 'v-top'): ?>
+        <?php echo $this->getChildHtml('cookielaw.before_body_end.widget'); ?>
+    <?php endif; ?>
+<?php endif; ?>

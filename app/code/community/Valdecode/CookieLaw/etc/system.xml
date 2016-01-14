@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+-->
+<config>
+    <sections>
+        <cookielaw module="cookielaw">
+            <label>Cookie Law Compliance</label>
+            <class>v-cookielaw-section</class>
+            <header_css>v-cookielaw-header</header_css>
+            <tab>general</tab>
+            <sort_order>9000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="cookielaw">
+                    <label>General</label>
+                    <comment>
+                        <![CDATA[
+                            <div class="v-cookielaw-notice">
+                            <b><a href="http://www.magentocommerce.com/magento-connect/eu-cookie-law-compliance-3.html" target="_blank">Cookie Law Compliance</a></b>
+                            is a <b><a href="http://www.valdecode.com/" target="_blank">Valdecode</a></b>
+                            extension.<br/><span class="advice">We would like you to review this extension
+                            at Magento Connect. If you feel that we do not deserve a 5 star review, please contact us right
+                            away before leaving a neutral or negative review, so we can try to correct the problem.</span>
+                            </div>
+                        ]]>
+                    </comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <type translate="label">
+                            <label>Type</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>cookielaw/config_type</source_model>
+                        </type>
+                        <bar_position translate="label">
+                            <label>Bar position</label>
+                            <comment>[Top] does not cover the content, [Bottom] is fixed.</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <type>v-bar</type>
+                            </depends>
+                            <source_model>cookielaw/config_bar_position</source_model>
+                        </bar_position>
+                        <box_position translate="label">
+                            <label>Box position</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <type>v-box</type>
+                            </depends>
+                            <source_model>cookielaw/config_box_position</source_model>
+                        </box_position>
+                        <skin translate="label">
+                            <label>Skin</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>cookielaw/config_skin</source_model>
+                        </skin>
+                        <behaviour translate="label">
+                            <label>When visitor closes the notice</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>cookielaw/config_behaviour</source_model>
+                        </behaviour>
+                        <autohide translate="label">
+                            <label>Autohide (in seconds)</label>
+                            <comment>If [0] then the notice won't close automatically.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </autohide>
+                    </fields>
+                </general>
+                <content translate="label" module="cookielaw">
+                    <label>Content</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <show translate="label">
+                            <label>Content</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>cookielaw/config_message</source_model>
+                        </show>
+                        <custom_message translate="label">
+                            <label>Message text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
+                        </custom_message>
+                        <custom_accept translate="label">
+                            <label>Accept text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
+                        </custom_accept>
+                        <custom_more_info translate="label">
+                            <label>More information text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show>custom</show>
+                            </depends>
+                        </custom_more_info>
+                        <cms_page translate="label">
+                            <label>More information page</label>
+                            <comment>CMS page with information about cookies and how to manage them.</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_cms_page</source_model>
+                        </cms_page>
+                    </fields>
+                </content>
+            </groups>
+        </cookielaw>
+    </sections>
+</config>

@@ -1,0 +1,52 @@
+<?php
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+?>
+<?php $_helper = Mage::helper('cookielaw'); ?>
+<div id="v-cookielaw"
+     class="<?php echo $_helper->getType(); ?> <?php echo $_helper->getSkin(); ?> <?php echo ($_helper->getType() == 'v-bar') ? $_helper->getBarPosition() : $_helper->getBoxPosition(); ?>"
+     style="display: none">
+    <div class="v-message">
+        <?php echo ($_helper->getShow() == 'default') ? $this->__('This websites use cookies. By continuing to browse the site you are agreeing to our use of cookies.') : $_helper->getCustomMessage(); ?>
+    </div>
+    <div class="v-actions">
+        <a href="javascript:cookieLawAccept();" class="v-button v-accept">
+            <?php echo ($_helper->getShow() == 'default') ? $this->__("Accept") : $_helper->getCustomAccept(); ?>
+        </a>
+        <a href="<?php echo $_helper->getCmsPage(); ?>" class="v-button">
+            <?php echo ($_helper->getShow() == 'default') ? $this->__("More information") : $_helper->getCustomMoreInfo(); ?>
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+    function cookieLawAccept() {
+        var d = null;
+        if (<?php echo $_helper->getBehaviour(); ?>) {
+            d = new Date();
+            d.setTime(d.getTime() + (<?php echo $_helper->getBehaviour(); ?> * 24 * 60 * 60 * 1000));
+        }
+        Mage.Cookies.set('cookielaw', '1', d);
+        document.getElementById('v-cookielaw').style.display = 'none';
+    }
+
+    if (!Mage.Cookies.get('cookielaw')) document.getElementById('v-cookielaw').style.display = '';
+
+    <?php if ($_helper->getAutohide()): ?>
+        setTimeout(function () {
+            cookieLawAccept();
+        }, <?php echo $_helper->getAutohide()*1000; ?>);
+    <?php endif; ?>
+</script>

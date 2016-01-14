@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+-->
+<config>
+    <modules>
+        <Valdecode_CookieLaw>
+            <version>1.1.14</version>
+        </Valdecode_CookieLaw>
+    </modules>
+    <global>
+        <blocks>
+            <cookielaw>
+                <class>Valdecode_CookieLaw_Block</class>
+            </cookielaw>
+        </blocks>
+        <helpers>
+            <cookielaw>
+                <class>Valdecode_CookieLaw_Helper</class>
+            </cookielaw>
+        </helpers>
+        <models>
+            <cookielaw>
+                <class>Valdecode_CookieLaw_Model</class>
+            </cookielaw>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <cookielaw>
+                    <file>cookielaw.xml</file>
+                </cookielaw>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <cookielaw>
+                    <files>
+                        <default>Valdecode_CookieLaw.csv</default>
+                    </files>
+                </cookielaw>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <cookielaw>
+                    <file>cookielaw.xml</file>
+                </cookielaw>
+            </updates>
+        </layout>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <cookielaw>
+                                            <title>Cookie Law Compliance</title>
+                                        </cookielaw>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <cookielaw>
+            <general>
+                <type>v-bar</type>
+                <bar_position>v-top</bar_position>
+                <box_position>v-bottom-right</box_position>
+                <skin>v-yellow-alert</skin>
+                <behaviour>365</behaviour>
+                <autohide>0</autohide>
+            </general>
+            <content>
+                <show>default</show>
+                <custom_message>This websites use cookies.</custom_message>
+                <custom_accept>Close</custom_accept>
+                <custom_more_info>More information</custom_more_info>
+                <cms_page>privacy-policy-cookie-restriction-mode</cms_page>
+            </content>
+        </cookielaw>
+    </default>
+</config>

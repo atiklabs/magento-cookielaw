@@ -1,0 +1,23 @@
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+ul.tabs.config-tabs a.v-cookielaw-section span { background: url(../images/icon.png) no-repeat 187px 3px; }
+ul.tabs.config-tabs a.v-cookielaw-section.active span { background: #fff url(../images/icon.png) no-repeat 187px 3px; }
+
+.content-header h3.v-cookielaw-header { background: url(../images/icon.png) no-repeat; padding-left: 31px; }
+
+.section-config .config .comment .v-cookielaw-notice { border: 1px solid #d6d6d6; padding: 5px; margin-bottom: 5px; background: #fafafa; }
+.section-config .config .comment .v-cookielaw-notice .advice { color: #6f8992; }
+.section-config .config .comment .v-cookielaw-notice a { color: #ea7601; }

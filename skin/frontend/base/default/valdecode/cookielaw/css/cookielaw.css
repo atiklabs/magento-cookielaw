@@ -1,0 +1,64 @@
+/**
+ * Valdecode - Cookie Law Compliance
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the The MIT License (MIT)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.valdecode.com/license/cookielaw/license.txt
+ *
+ * @category    Valdecode
+ * @package     Valdecode_CookieLaw
+ * @copyright   Copyright (c) 2014 Valdecode
+ * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ */
+#v-cookielaw { overflow: hidden; background: #fff; color: #444; z-index: 9999; font-size: 13px; }
+#v-cookielaw .v-message { padding: 5px 10px; text-align: left; }
+#v-cookielaw .v-actions { }
+#v-cookielaw .v-button { color: #222; display: inline-block; background-color: #ececec; background-image: linear-gradient(#f4f4f4, #ececec); border: 1px solid #d4d4d4; padding: 4px 10px; text-decoration: none; text-shadow: 1px 1px 0 #fff; border-radius: 2px; }
+#v-cookielaw .v-button.v-accept:before { content: "\2714"; }
+#v-cookielaw .v-button:hover,
+#v-cookielaw .v-button:focus { color: #fff; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); border-color: #3072b3; border-bottom-color: #2a65a0; background-color: #2a65a0; background-image: linear-gradient(#599bdc, #3072b3); }
+#v-cookielaw .v-button:active {  border-color: #2a65a0; border-bottom-color: #3884cd; background-color: #3072b3; background-image: linear-gradient(#3072b3, #599bdc); }
+
+#v-cookielaw.v-bar { display: table; width: 100%; padding: 5px 0; }
+#v-cookielaw.v-bar .v-message { display: table-cell; }
+#v-cookielaw.v-bar .v-actions { display: table-cell; vertical-align: middle; width: 250px; padding-right: 10px; text-align: right; }
+#v-cookielaw.v-bar.v-top { position: relative; border-bottom: 1px solid #000; }
+#v-cookielaw.v-bar.v-bottom { position: fixed; bottom: 0; border-top: 1px solid #000; }
+
+#v-cookielaw.v-box { position: fixed; max-width: 300px; border: 1px solid #000; border-radius: 3px; margin: 10px; }
+#v-cookielaw.v-box .v-actions { float: left; margin: 5px 10px; }
+#v-cookielaw.v-box.v-top-left { top: 0; left: 0; }
+#v-cookielaw.v-box.v-top-right { top: 0; right: 0; }
+#v-cookielaw.v-box.v-bottom-left { bottom: 0; left: 0; }
+#v-cookielaw.v-box.v-bottom-right { bottom: 0; right: 0; }
+
+/* RWD */
+@media (max-width: 480px) {
+    #v-cookielaw.v-box { display: table; width: 100% !important; padding: 5px 0 0; position: fixed; bottom: 0 !important; top: auto !important; border-top: 1px solid #000; max-width: 100%; margin: 0; border-radius: 0; border-right: 0; border-left: 0; border-bottom: 0; }
+    #v-cookielaw.v-box .v-message { display: table-cell; }
+    #v-cookielaw.v-box .v-actions { display: table-cell; vertical-align: middle; width: 250px; padding-right: 10px; text-align: left; }
+
+    #v-cookielaw .v-message { float: left; }
+    #v-cookielaw .v-actions { float: left; margin: 5px 10px; }
+    #v-cookielaw.v-bar .v-actions { width: auto; }
+}
+
+/* Skin - Yellow Alert */
+#v-cookielaw.v-yellow-alert { background: #fffbcd; border-color: #e2cd7b !important; }
+
+/* Skin - Dark Clean */
+#v-cookielaw.v-dark-clean { color: #fff; background: #2c2c2c; border-color: #55575f !important; }
+#v-cookielaw.v-dark-clean .v-button { color: #fff; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); border-color: #3072b3; border-bottom-color: #2a65a0; background-color: #2a65a0; background-image: linear-gradient(#599bdc, #3072b3); }
+#v-cookielaw.v-dark-clean .v-button:hover,
+#v-cookielaw.v-dark-clean .v-button:focus { background-color: #3678a0; background-image: linear-gradient(#68abdc, #387cb3); }
+
+/* Skin - Minimalist */
+#v-cookielaw.v-minimalist { color: #2c2c2c; background: #f0f0f0; border-color: #e0e0e0 !important; font-size: 11px; font-family: Verdana; }
+#v-cookielaw.v-bar.v-minimalist { padding: 2px 0; }
+#v-cookielaw.v-box.v-minimalist { width: 260px; }
+#v-cookielaw.v-box.v-minimalist .v-actions { margin: 5px; }
+#v-cookielaw.v-box.v-minimalist .v-message { padding: 5px; }
+#v-cookielaw.v-minimalist .v-button { padding: 3px 6px; }
