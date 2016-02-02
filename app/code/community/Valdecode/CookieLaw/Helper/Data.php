@@ -60,7 +60,7 @@ class Valdecode_CookieLaw_Helper_Data extends Mage_Core_Helper_Abstract
             $pageId = substr($pageId, 0, $delimeterPosition);
         }
          
-        return Mage::getUrl($pageId);
+        return Mage::helper('cms/page')->getPageUrl($pageId);
     }
 
     public function getShow()
