@@ -1,0 +1,14 @@
+app/code/community/Valdecode/CookieLaw/ app/code/community/Valdecode/CookieLaw/
+app/design/adminhtml/default/default/layout/cookielaw.xml app/design/adminhtml/default/default/layout/cookielaw.xml
+app/design/frontend/base/default/layout/cookielaw.xml app/design/frontend/base/default/layout/cookielaw.xml
+app/design/frontend/base/default/template/cookielaw/ app/design/frontend/base/default/template/cookielaw/
+app/etc/modules/Valdecode_CookieLaw.xml app/etc/modules/Valdecode_CookieLaw.xml
+app/locale/de_DE/Valdecode_CookieLaw.csv app/locale/de_DE/Valdecode_CookieLaw.csv
+app/locale/en_US/Valdecode_CookieLaw.csv app/locale/en_US/Valdecode_CookieLaw.csv
+app/locale/es_ES/Valdecode_CookieLaw.csv app/locale/es_ES/Valdecode_CookieLaw.csv
+app/locale/fr_FR/Valdecode_CookieLaw.csv app/locale/fr_FR/Valdecode_CookieLaw.csv
+app/locale/hu_HU/Valdecode_CookieLaw.csv app/locale/hu_HU/Valdecode_CookieLaw.csv
+app/locale/nl_NL/Valdecode_CookieLaw.csv app/locale/nl_NL/Valdecode_CookieLaw.csv
+app/locale/ro_RO/Valdecode_CookieLaw.csv app/locale/ro_RO/Valdecode_CookieLaw.csv
+skin/adminhtml/default/default/valdecode/cookielaw/ skin/adminhtml/default/default/valdecode/cookielaw/
+skin/frontend/base/default/valdecode/cookielaw/ skin/frontend/base/default/valdecode/cookielaw/
