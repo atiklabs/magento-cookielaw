@@ -55,10 +55,6 @@ class Valdecode_CookieLaw_Helper_Data extends Mage_Core_Helper_Abstract
     public function getCmsPage()
     {
         $pageId = Mage::getStoreConfig('cookielaw/content/cms_page');
-        $delimeterPosition = strrpos($pageId, '|');
-        if ($delimeterPosition) {
-            $pageId = substr($pageId, 0, $delimeterPosition);
-        }
          
         return Mage::helper('cms/page')->getPageUrl($pageId);
     }
