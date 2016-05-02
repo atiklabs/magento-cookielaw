@@ -1,0 +1,11 @@
+{
+    "name": "valdecode/mage-cookie-law",
+    "license": "MIT",
+    "type": "magento-module",
+    "description": "eu cookie law",
+    "require": {
+    },
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "to install to magento project"
+    }
+}
