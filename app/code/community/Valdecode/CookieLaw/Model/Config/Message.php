@@ -1,19 +1,9 @@
 <?php
 
 /**
- * Valdecode - Cookie Law Compliance
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the The MIT License (MIT)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://raw.githubusercontent.com/valdecode/magento-cookielaw/master/LICENSE.txt
- *
- * @category    Valdecode
- * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2016 VALDECODE ONLINE SL.
- * @license     https://raw.githubusercontent.com/valdecode/magento-cookielaw/master/LICENSE.txt  The MIT License (MIT)
+ * Copyright 2016 The Valdecode Cookie Law Compliance Authors. All rights reserved.
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE.txt file.
  */
 class Valdecode_CookieLaw_Model_Config_Message
 {
