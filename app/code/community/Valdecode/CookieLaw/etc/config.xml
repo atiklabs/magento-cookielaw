@@ -8,12 +8,12 @@
  * This source file is subject to the The MIT License (MIT)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://www.valdecode.com/license/cookielaw/license.txt
+ * https://raw.githubusercontent.com/valdecode/magento-cookielaw/master/LICENSE.txt
  *
  * @category    Valdecode
  * @package     Valdecode_CookieLaw
- * @copyright   Copyright (c) 2014 Valdecode
- * @license     http://www.valdecode.com/license/cookielaw/license.txt  The MIT License (MIT)
+ * @copyright   Copyright (c) 2016 VALDECODE ONLINE SL.
+ * @license     https://raw.githubusercontent.com/valdecode/magento-cookielaw/master/LICENSE.txt  The MIT License (MIT)
  */
 -->
 <config>
